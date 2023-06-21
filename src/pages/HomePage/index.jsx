@@ -3,16 +3,13 @@
 import Header from "@/components/Header"
 import { Container } from "./style"
 
-import { BrowserRouter } from 'react-router-dom'
 
 const HomePage = () => {
 
-    return (
-        <BrowserRouter>
+    return (        
             <Container>
                 <Header />
-            </Container>
-       </BrowserRouter>
+            </Container>       
     )
 }
 
