@@ -1,8 +1,18 @@
+"use client"
+
 import Header from "@/components/Header"
+import { Container } from "./style"
+
+import { BrowserRouter } from 'react-router-dom'
 
 const HomePage = () => {
+
     return (
-        <Header />
+        <BrowserRouter>
+            <Container>
+                <Header />
+            </Container>
+       </BrowserRouter>
     )
 }
 
