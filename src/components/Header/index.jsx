@@ -1,9 +1,11 @@
-
+import { Container } from "./style"
 
 const Header = () => {
 
     return (
-        <h1>Olá mundo</h1>
+       <Container>
+            <h1>Olá mundo</h1>
+       </Container>         
     )
 
 }
