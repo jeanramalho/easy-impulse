@@ -9,9 +9,9 @@ const Header = () => {
 
     return (
        <Container>
-            <div className="logo-linx">
-                <Image src={logoLinx} alt="logo da linx" />
-                
+            <div className="logo-header">
+                <Image src={logoLinx} alt="logo da linx"  className="logo-linx"/>
+                <Image src={logoImpulse} alt="logo da linx"  className="logo-impulse"/>
             </div>
        </Container>         
     )
