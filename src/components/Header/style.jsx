@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     color: #000;
     width: 100%;
-    height: 7vh;
+    height: 9gitvh;
     background: #4b204b;
     diplay: flex;
     justify-content: center;
@@ -14,6 +14,12 @@ export const Container = styled.div`
         width: auto;
         height: 97%;
         border: 2px solid red;
+    }
+
+    .box-impulse {
+        padding: 5px;
+        background: #fff;
+        border-radius: 8px;
     }
 
     .logo-linx {

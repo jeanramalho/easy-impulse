@@ -11,7 +11,10 @@ const Header = () => {
        <Container>
             <div className="logo-header">
                 <Image src={logoLinx} alt="logo da linx"  className="logo-linx"/>
-                <Image src={logoImpulse} alt="logo da linx"  className="logo-impulse"/>
+                <div className="box-impulse">
+                    <Image src={logoImpulse} alt="logo da linx"  className="logo-impulse"/>
+                </div>
+                
             </div>
        </Container>         
     )
