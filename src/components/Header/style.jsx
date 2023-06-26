@@ -24,6 +24,7 @@ export const Container = styled.div`
     .logo-linx {
         width: auto;
         height: 80%;
+        display: block;
     }
 
     .logo-impulse {
