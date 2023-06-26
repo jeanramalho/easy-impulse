@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
 
     .logo-linx {
-        width: 2.5rem;
+        width: 2.3rem;
         height: 80%;
         margin: 3px 10px;
     }
