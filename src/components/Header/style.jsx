@@ -13,7 +13,6 @@ export const Container = styled.div`
         flex-direction: row;
         width: auto;
         height: 97%;
-        border: 2px solid red;
     }
 
     .box-impulse {
@@ -23,8 +22,8 @@ export const Container = styled.div`
     }
 
     .logo-linx {
-        width: 35px;
-        height: auto;
+        width: auto;
+        height: 80%;
     }
 
     .logo-impulse {
