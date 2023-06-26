@@ -20,16 +20,19 @@ export const Container = styled.div`
         padding: 5px;
         background: #fff;
         border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .logo-linx {
         width: 2rem;
         height: 80%;
-        margin: 8px auto;
+        margin: 3px 8px;
     }
 
     .logo-impulse {
-        width: 4rem;
+        width: 5rem;
         height: 90%;
     }
 
