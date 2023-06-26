@@ -14,10 +14,11 @@ export const Container = styled.div`
         width: auto;
         height: 97%;
         padding: 5px;
+        align-items: center;
     }
 
     .box-impulse {
-        padding: 5px;
+        padding: 5px 8px;
         background: #fff;
         border-radius: 8px;
         display: flex;
