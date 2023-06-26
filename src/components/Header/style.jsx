@@ -7,6 +7,7 @@ export const Container = styled.div`
     background-image: radial-gradient(circle at 50% 50%, #bb4e7e 0, #ad427e 16.67%, #982f78 33.33%, #7d116e 50%, #600065 66.67%, #450060 83.33%, #290060 100%);
     diplay: flex;
     justify-content: center;
+    box-shadow: 0 5px 5px grey;
 
     .logo-header {
         display: flex;
