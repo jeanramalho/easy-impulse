@@ -22,9 +22,8 @@ export const Container = styled.div`
     }
 
     .logo-linx {
-        width: auto;
+        width: 2rem;
         height: 80%;
-        display: block;
     }
 
     .logo-impulse {
