@@ -6,4 +6,5 @@ export const Container = styled.li`
     border-right: 2px #cecece solid;
     border-left: 2px #cecece solid;
     margin: 30px auto;
+    padding: 15px;
 `
