@@ -8,6 +8,7 @@ export const Container = styled.div`
     diplay: flex;
     justify-content: center;
     box-shadow: 0 5px 5px grey;
+    z-index: 999;
 
     .logo-header {
         display: flex;
