@@ -3,6 +3,7 @@ import styled  from "styled-components";
 export const Container = styled.li`
     width: 40%;
     height: auto;
-    border: 1px #cecece solid;
-
+    border-right: 2px #cecece solid;
+    border-left: 2px #cecece solid;
+    margin: 30px auto;
 `
