@@ -10,4 +10,8 @@ export const Container = styled.li`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    h2 {
+        cursor: pointer;
+    }
 `
