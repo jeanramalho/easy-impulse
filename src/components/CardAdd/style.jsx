@@ -13,6 +13,7 @@ export const Container = styled.ul`
 
     p {
         font-size: 2rem;
+        cursor: pointer;
     }
 
     h2 {
