@@ -101,7 +101,7 @@ a {
 }
 
 .modal-overlay {
-  background: #cecece;
+  background: rgba(67, 67, 67, 0.5);
   position: fixed;
   top: 0;
   bottom: 0;

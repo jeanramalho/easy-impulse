@@ -21,8 +21,4 @@ export const Container = styled.ul`
         font-size: 1.2rem;
     }
 
-    Modal {
-        background: red;
-    }
- 
 `
