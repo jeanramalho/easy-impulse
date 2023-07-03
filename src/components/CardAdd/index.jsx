@@ -20,7 +20,7 @@ const CardAdd = () => {
     return (
         <Container>
             <h2>Adcionar Cliente</h2>
-            <p>+</p>
+            <p onClick={openModal}>+</p>
 
             <Modal
             isOpen={modalIsOpen}
