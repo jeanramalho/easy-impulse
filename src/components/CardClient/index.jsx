@@ -11,12 +11,12 @@ const CardClient = () => {
     }
 
     return (
-        <Container onClick={handleClick}>
+        <Container>
             <div>
                 <h3>nome-do-cliente</h3>
                 <p>adofbaoignaogroa==</p>
             </div>
-            <h2>&gt;</h2>
+            <h2 onClick={handleClick}>&gt;</h2>
         </Container>
 
     )
