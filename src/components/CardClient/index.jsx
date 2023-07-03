@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Modal from "react-modal"
-
 import { Container } from "./style";
 
 
@@ -11,12 +8,12 @@ const CardClient = () => {
     }
 
     return (
-        <Container>
+        <Container onClick={handleClick}>
             <div>
                 <h3>nome-do-cliente</h3>
                 <p>adofbaoignaogroa==</p>
             </div>
-            <h2 onClick={handleClick}>&gt;</h2>
+            <h2>&gt;</h2>
         </Container>
 
     )
