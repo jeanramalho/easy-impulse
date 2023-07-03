@@ -28,17 +28,26 @@ const CardAdd = () => {
             contentLabel="Exemple Modal"
             overlayClassName="modal-overlay"
             className="modal-content" >
-                <h2>Hello i am a modal</h2>
+
+                <div className="headerAddModal">
+                    <h2>Novo Cliente</h2>
+                    <p onClick={closeModal}>X</p>
+                </div>
+                
                 <hr />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ratione, 
-                    aspernatur similique quo quia culpa officiis mollitia distinctio autem 
-                    ab quidem placeat, cupiditate dolorum corrupti fuga suscipit sit vel 
-                    asperiores? Exercitationem ratione necessitatibus iste atque tempore vero, 
-                    quisquam delectus vitae corporis maiores, autem modi recusandae at 
-                    consectetur esse aperiam, quasi sequi quos repellat voluptas dolores 
-                    maxime quo deserunt. Similique dolor recusandae debitis harum odio, 
-                    tempora id quod neque impedit saepe et odit. Iusto, similique voluptas.</p>
-                <button onClick={closeModal}>Close Modal</button>
+
+                <div className="divInputs">
+                    <p>Apikey</p>
+                    <input type='text' placeholder='Insira aqui sua api key...' required/>
+                </div>
+
+                <div className="divInputs">
+                    <p>SecretKey</p>
+                    <input type='text' placeholder='Insira aqui sua api key...' required/>
+                </div>
+
+                <button>Salvar</button>
+        
             </Modal>
         </Container>
     )
