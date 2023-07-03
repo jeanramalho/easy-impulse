@@ -20,4 +20,25 @@ export const Container = styled.ul`
         text-transform: uppercase;
         font-size: 1.2rem;
     }
+
+    .modal-overlay {
+        background: #cecece;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        aling-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 500px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
 `
