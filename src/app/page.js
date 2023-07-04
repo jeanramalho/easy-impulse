@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom'
 export default function Home() {
   return (
     <main>
-      <BrowserRouter>
+      <BrowserRouter id="Root">
         <Router />
       </BrowserRouter>
     </main>
