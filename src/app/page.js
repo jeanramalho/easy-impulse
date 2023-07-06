@@ -8,11 +8,10 @@ import { BrowserRouter } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <BrowserRouter >
-    <main id='Root'>
-      
-        <Router />      
+    <main>
+      <BrowserRouter >
+        <Router />
+      </BrowserRouter>
     </main>
-    </BrowserRouter>
   )
 }
