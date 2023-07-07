@@ -11,14 +11,14 @@ const CardClient = () => {
 
     return (
         <Container onClick={handleClick}>
-            <Link>
-                <a>
+            <Link href="./RequestPage">
+                
                     <div>
                         <h3>nome-do-cliente</h3>
                         <p>adofbaoignaogroa==</p>
                     </div>
                     <h2>&gt;</h2>
-                </a>
+               
             </Link>
             
         </Container>
