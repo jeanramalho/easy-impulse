@@ -5,10 +5,10 @@ import { useRouter } from "next/router"
 const Apikey = () => {
 
     const router = useRouter()
-    const parametro = router.query.Apikey
+    const parametro = router.query.apikey
 
     return (
-        <h1>{parametro}</h1>
+        <h1>A rota é: {parametro}</h1>
     )
 }
 
