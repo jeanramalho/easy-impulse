@@ -11,7 +11,7 @@ const CardClient = () => {
 
     return (
         <Container onClick={handleClick}>
-            <Link href="./posts/RequestPage/tokstok">
+            <Link href="./RequestPage/tokstok">
                 
                     <div>
                         <h3>nome-do-cliente</h3>
