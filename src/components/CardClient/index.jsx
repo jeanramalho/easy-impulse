@@ -3,7 +3,7 @@ import { Container } from "./style";
 import Link from "next/link";
 
 
-const CardClient = () => {
+const CardClient = ({apikey, secretkey}) => {
 
     const  handleClick = () => {
         console.log("clicou no card")
@@ -14,8 +14,8 @@ const CardClient = () => {
             <Link href="./RequestPage/tokstok">
                 
                     <div>
-                        <h3>nome-do-cliente</h3>
-                        <p>adofbaoignaogroa==</p>
+                        <h3>{apikey}</h3>
+                        <p>{secretkey}</p>
                     </div>
                     <h2>&gt;</h2>
                
