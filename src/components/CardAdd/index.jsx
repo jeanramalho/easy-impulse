@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "react-modal"
 
 import { Container } from "./style";
@@ -27,13 +27,25 @@ const CardAdd = () => {
         setIsOpen(false)
     }
 
-    let clientes = []
-    const cliente = {"apikey": apiKeyValue, "secretkey": secretKeyValue}
+    const [clienteData, setClienteData] = useState([])
 
-    const  handleClickSave = () => {
-        clientes += JSON.stringify(cliente)
-        localStorage.setItem('cliente', JSON.stringify(clientes))
-    }
+    useEffect(() => {
+        const data = localStorage.getItem('clientes');
+        if (data) {
+            setClienteData(JSON.parse(data));
+        }
+      }, [])
+
+     
+      const adicionarCliente = () => {
+        const clientinho = {"apikey": apiKeyValue, "secretkey": secretKeyValue}
+        const novosClientes = [...clienteData, clientinho];
+        setClienteData(novosClientes);
+        localStorage.setItem('clientes', JSON.stringify(novosClientes));
+      }
+    
+    
+   
 
     return (
         <Container>
@@ -64,7 +76,7 @@ const CardAdd = () => {
                     <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetSecretkey}required/>
                 </div>
 
-                <button onClick={handleClickSave}>Salvar</button>
+                <button onClick={adicionarCliente}>Salvar</button>
         
             </Modal>
         </Container>
