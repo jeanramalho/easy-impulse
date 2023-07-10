@@ -5,7 +5,6 @@ import ListClients from "@/components/ListClients"
 import { Container } from "./style"
 
 
-
 const HomePage = () => {
 
     return (        

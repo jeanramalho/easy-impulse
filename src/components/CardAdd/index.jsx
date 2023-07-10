@@ -8,8 +8,16 @@ import { Container } from "./style";
 const CardAdd = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false)
+
     const [apiKeyValue, setApiKey] = useState("")
+    const handleSetApikey = (e) => {
+        setApiKey(e.target.value)
+    }
+
     const [secretKeyValue, setSecretkey] = useState("")
+    const handleSetSecretkey = (e) => {
+        setSecretkey(e.target.value)
+    }
 
     function openModal() {
         setIsOpen(true)
@@ -19,11 +27,12 @@ const CardAdd = () => {
         setIsOpen(false)
     }
 
-    const  handleClick = () => {
-        // const cliente = {"apikey": apikey, "secretkey": secretkey}
-        // localStorage.setItem('cliente', JSON.stringify(cliente))
+    let clientes = []
+    const cliente = {"apikey": apiKeyValue, "secretkey": secretKeyValue}
 
-        console.log(apiKeyValue)
+    const  handleClickSave = () => {
+        clientes += JSON.stringify(cliente)
+        localStorage.setItem('cliente', JSON.stringify(clientes))
     }
 
     return (
@@ -47,15 +56,15 @@ const CardAdd = () => {
 
                 <div className="divInputs">
                     <p>Apikey</p>
-                    <input type='text' value={apiKeyValue} placeholder='Insira aqui sua api key...' onChange={setApiKey} required/>
+                    <input type='text' value={apiKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetApikey}required/>
                 </div>
 
                 <div className="divInputs">
                     <p>SecretKey</p>
-                    <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={setSecretkey}required/>
+                    <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetSecretkey}required/>
                 </div>
 
-                <button onClick={handleClick}>Salvar</button>
+                <button onClick={handleClickSave}>Salvar</button>
         
             </Modal>
         </Container>

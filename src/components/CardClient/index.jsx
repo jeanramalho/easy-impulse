@@ -8,7 +8,7 @@ const CardClient = ({apikey, secretkey}) => {
     let redirect = `./RequestPage/${apikey}`
 
     return (
-        <Container onClick={handleClick}>
+        <Container>
             <Link href={redirect}>
                 
                     <div>
