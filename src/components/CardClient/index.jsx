@@ -9,9 +9,11 @@ const CardClient = ({apikey, secretkey}) => {
         console.log("clicou no card")
     }
 
+    let redirect = `./RequestPage/${apikey}`
+
     return (
         <Container onClick={handleClick}>
-            <Link href="./RequestPage/tokstok">
+            <Link href={redirect}>
                 
                     <div>
                         <h3>{apikey}</h3>
