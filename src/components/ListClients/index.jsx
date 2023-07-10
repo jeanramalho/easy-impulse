@@ -4,9 +4,9 @@ import CardAdd from "../CardAdd"
 import CardClient from "../CardClient"
 
 const obj = [
-    {"apikey": "tokstoken", "secretKey":"sdfsdfsd"},
-    {"apikey": "paodeacucar", "secretKey":"sdfsdfsd"},
-    {"apikey": "clubeextra", "secretKey":"sdfsdfsd"},
+    {"apikey": "tokstoken", "secretkey":"sdfsdfsd1"},
+    {"apikey": "paodeacucar", "secretkey":"sdfsdfsd2"},
+    {"apikey": "clubeextra", "secretkey":"sdfsdfsd3"},
     
 ]
 
@@ -16,9 +16,9 @@ const ListClients = () => {
         <Container>
             <CardAdd />
             {obj.map((objeto) => {
-                console.log(objeto.apikey)
+                
+               return(<CardClient apikey={objeto.apikey} secretkey={objeto.secretkey}/>) 
             })}
-            {/* <CardClient apikey={"TokStok"} secretkey={"nodasgfnasofignaei=="}/> */}
         </Container>
     )
 }
