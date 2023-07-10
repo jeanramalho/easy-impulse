@@ -8,7 +8,7 @@ const ListClients = () => {
     return (
         <Container>
             <CardAdd />
-            <CardClient />
+            <CardClient apikey={"TokStok"} secretkey={"nodasgfnasofignaei=="}/>
         </Container>
     )
 }
