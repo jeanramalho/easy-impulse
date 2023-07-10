@@ -5,10 +5,6 @@ import Link from "next/link";
 
 const CardClient = ({apikey, secretkey}) => {
 
-    const  handleClick = () => {
-        console.log("clicou no card")
-    }
-
     let redirect = `./RequestPage/${apikey}`
 
     return (

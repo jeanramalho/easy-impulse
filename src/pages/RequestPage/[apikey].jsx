@@ -12,8 +12,8 @@ const RequestPage = () => {
 
     return (
         <Container>
-            <Header />
-            <h1>A apikey é: {parametro}</h1>
+           <Header />
+            
         </Container>
     )
 }

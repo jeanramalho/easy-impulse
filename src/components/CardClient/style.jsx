@@ -9,6 +9,7 @@ export const Container = styled.li`
     color: #808080;
     display: flex;
     flex-direction: row;
+    flex-wrap: no-wrap;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
