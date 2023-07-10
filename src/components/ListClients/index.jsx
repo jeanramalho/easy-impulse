@@ -15,7 +15,10 @@ const ListClients = () => {
     return (
         <Container>
             <CardAdd />
-            <CardClient apikey={"TokStok"} secretkey={"nodasgfnasofignaei=="}/>
+            {obj.map((objeto) => {
+                console.log(objeto.apikey)
+            })}
+            {/* <CardClient apikey={"TokStok"} secretkey={"nodasgfnasofignaei=="}/> */}
         </Container>
     )
 }
