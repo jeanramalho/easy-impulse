@@ -13,7 +13,7 @@ const RequestPage = () => {
     return (
         <Container>
            <Header />
-            
+            <h1>olá {parametro}</h1>
         </Container>
     )
 }
