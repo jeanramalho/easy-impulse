@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 import Modal from "react-modal"
 
 import { Container } from "./style";
@@ -7,17 +7,34 @@ import { Container } from "./style";
 
 const CardAdd = () => {
 
+    useEffect(() => {
+        const savedData = localStorage.getItem('clientData');
+        if (savedData) {
+          setClientData(JSON.parse(savedData));
+        }
+      }, []);
+      
+    const [clientData, setClientData] = useState([]);
+
     const [modalIsOpen, setIsOpen] = useState(false)
 
     const [apiKeyValue, setApiKey] = useState("")
     const handleSetApikey = (e) => {
-        setApiKey(e.target.value)
-    }
+        setApiKey(e.target.value);
+        setClientData((prevData) => ({
+          ...prevData,
+          apikey: e.target.value
+        }));
+      };
 
     const [secretKeyValue, setSecretkey] = useState("")
     const handleSetSecretkey = (e) => {
-        setSecretkey(e.target.value)
-    }
+        setSecretkey(e.target.value);
+        setClientData((prevData) => ({
+          ...prevData,
+          secret: e.target.value
+        }));
+      };
 
     function openModal() {
         setIsOpen(true)
@@ -26,6 +43,13 @@ const CardAdd = () => {
     function closeModal() {
         setIsOpen(false)
     }
+
+    const handleSaveClick = () => {
+        const newData = [...clientData];
+        newData.push(clientData);
+        setClientData(newData);
+        localStorage.setItem('clientData', JSON.stringify(newData));
+      };
   
 
     return (
@@ -57,7 +81,8 @@ const CardAdd = () => {
                     <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetSecretkey}required/>
                 </div>
 
-                <button>Salvar</button>
+                <button onClick={handleSaveClick}>Salvar</button>
+
         
             </Modal>
         </Container>
