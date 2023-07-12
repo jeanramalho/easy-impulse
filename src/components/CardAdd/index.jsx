@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 
 import { Container } from './style';
 
+Modal.setAppElement('#Root')
+
 const CardAdd = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [apiKeyValue, setApiKey] = useState('');
@@ -37,7 +39,7 @@ const CardAdd = () => {
       ...clientData,
       {
         apikey: apiKeyValue,
-        secret: secretKeyValue,
+        secretKey: secretKeyValue,
       },
     ];
     setClientData(newData);
