@@ -1,22 +1,23 @@
 import Image from "next/image"
-import { Container } from "./style"
+import style from "./header.module.scss"
 import logoLinx from "../../../public/logo-linx.png"
 import logoImpulse from "../../../public/linx-impulse.webp"
+
 
 
 
 const Header = () => {
 
     return (
-       <Container>
-            <div className="logo-header">
-                <Image src={logoLinx} alt="logo da linx"  className="logo-linx"/>
-                <div className="box-impulse">
-                    <Image src={logoImpulse} alt="logo da linx"  className="logo-impulse"/>
+       <div className={style.container}>
+            <div className={style.logoHeader}>
+                <Image src={logoLinx} alt="logo da linx"  className={style.logoLinx}/>
+                <div className={style.boxImpulse}>
+                    <Image src={logoImpulse} alt="logo da linx"  className={style.logoImpulse}/>
                 </div>
                 
             </div>
-       </Container>         
+       </div>         
     )
 
 }

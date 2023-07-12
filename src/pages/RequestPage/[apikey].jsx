@@ -1,21 +1,15 @@
 "use client"
 
 import Header from "@/components/Header"
-
-import { useRouter } from "next/router"
 import { Container } from "./style"
+import CardAdd from "@/components/CardAdd"
 
 
-const RequestPage = () => {
-    const router = useRouter()
-    const parametro = router.query.apikey
+const HomePage = () => {
 
-    return (
-        <Container>
-           <Header />
-            <h1>olá {parametro}</h1>
-        </Container>
+    return (        
+            <Header />
     )
 }
 
-export default RequestPage
+export default HomePage
