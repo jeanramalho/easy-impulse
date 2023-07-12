@@ -26,26 +26,7 @@ const CardAdd = () => {
     function closeModal() {
         setIsOpen(false)
     }
-
-    const [clienteData, setClienteData] = useState([])
-
-    useEffect(() => {
-        const data = localStorage.getItem('clientes');
-        if (data) {
-            setClienteData(JSON.parse(data));
-        }
-      }, [])
-
-     
-      const adicionarCliente = () => {
-        const clientinho = {"apikey": apiKeyValue, "secretkey": secretKeyValue}
-        const novosClientes = [...clienteData, clientinho];
-        setClienteData(novosClientes);
-        localStorage.setItem('clientes', JSON.stringify(novosClientes));
-      }
-    
-    
-   
+  
 
     return (
         <Container>
@@ -76,7 +57,7 @@ const CardAdd = () => {
                     <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetSecretkey}required/>
                 </div>
 
-                <button onClick={adicionarCliente}>Salvar</button>
+                <button>Salvar</button>
         
             </Modal>
         </Container>
