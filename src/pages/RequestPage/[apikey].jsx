@@ -8,7 +8,11 @@ import CardAdd from "@/components/CardAdd"
 const HomePage = () => {
 
     return (        
-            <Header />
+        <Container>
+               <Header /> 
+                <h1>Olá</h1>
+        </Container>
+            
     )
 }
 
