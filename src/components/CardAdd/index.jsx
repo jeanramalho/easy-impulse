@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 
 import { Container } from './style';
 
-Modal.setAppElement('#Root')
+// Modal.setAppElement('#Root')
 
 const CardAdd = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
