@@ -1,92 +1,96 @@
-import React, { useState, useEffect } from 'react'
-import Modal from "react-modal"
+import React, { useState, useEffect } from 'react';
+import Modal from 'react-modal';
 
-import { Container } from "./style";
-
-// Modal.setAppElement('#Root')
+import { Container } from './style';
 
 const CardAdd = () => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [apiKeyValue, setApiKey] = useState('');
+  const [secretKeyValue, setSecretKey] = useState('');
+  const [clientData, setClientData] = useState([]);
 
-    useEffect(() => {
-        const savedData = localStorage.getItem('clientData');
-        if (savedData) {
-          setClientData(JSON.parse(savedData));
-        }
-      }, []);
-      
-    const [clientData, setClientData] = useState([]);
-
-    const [modalIsOpen, setIsOpen] = useState(false)
-
-    const [apiKeyValue, setApiKey] = useState("")
-    const handleSetApikey = (e) => {
-        setApiKey(e.target.value);
-        setClientData((prevData) => ({
-          ...prevData,
-          apikey: e.target.value
-        }));
-      };
-
-    const [secretKeyValue, setSecretkey] = useState("")
-    const handleSetSecretkey = (e) => {
-        setSecretkey(e.target.value);
-        setClientData((prevData) => ({
-          ...prevData,
-          secret: e.target.value
-        }));
-      };
-
-    function openModal() {
-        setIsOpen(true)
+  useEffect(() => {
+    const savedData = localStorage.getItem('clientData');
+    if (savedData) {
+      setClientData(JSON.parse(savedData));
     }
+  }, []);
 
-    function closeModal() {
-        setIsOpen(false)
-    }
+  function openModal() {
+    setIsOpen(true);
+  }
 
-    const handleSaveClick = () => {
-        const newData = [...clientData];
-        newData.push(clientData);
-        setClientData(newData);
-        localStorage.setItem('clientData', JSON.stringify(newData));
-      };
-  
+  function closeModal() {
+    setIsOpen(false);
+  }
 
-    return (
-        <Container>
-            <h2>Adcionar Cliente</h2>
-            <p onClick={openModal}>+</p>
+  const handleSetApiKey = (e) => {
+    setApiKey(e.target.value);
+  };
 
-            <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel="Exemple Modal"
-            overlayClassName="modal-overlay"
-            className="modal-content" >
+  const handleSetSecretKey = (e) => {
+    setSecretKey(e.target.value);
+  };
 
-                <div className="headerAddModal">
-                    <h2>Novo Cliente</h2>
-                    <p onClick={closeModal}>X</p>
-                </div>
-                
-                <hr />
+  const handleSaveClick = () => {
+    const newData = [
+      ...clientData,
+      {
+        apikey: apiKeyValue,
+        secret: secretKeyValue,
+      },
+    ];
+    setClientData(newData);
+    localStorage.setItem('clientData', JSON.stringify(newData));
+    setApiKey('');
+    setSecretKey('');
+  };
 
-                <div className="divInputs">
-                    <p>Apikey</p>
-                    <input type='text' value={apiKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetApikey}required/>
-                </div>
+  return (
+    <Container>
+      <h2>Adicionar Cliente</h2>
+      <p onClick={openModal}>+</p>
 
-                <div className="divInputs">
-                    <p>SecretKey</p>
-                    <input type='text' value={secretKeyValue} placeholder='Insira aqui sua api key...' onChange={handleSetSecretkey}required/>
-                </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        overlayClassName="modal-overlay"
+        className="modal-content"
+      >
+        <div className="headerAddModal">
+          <h2>Novo Cliente</h2>
+          <p onClick={closeModal}>X</p>
+        </div>
 
-                <button onClick={handleSaveClick}>Salvar</button>
+        <hr />
 
-        
-            </Modal>
-        </Container>
-    )
-}
+        <div className="divInputs">
+          <p>Apikey</p>
+          <input
+            type="text"
+            value={apiKeyValue}
+            placeholder="Insira aqui sua api key..."
+            onChange={handleSetApiKey}
+            required
+          />
+        </div>
 
-export default CardAdd
+        <div className="divInputs">
+          <p>SecretKey</p>
+          <input
+            type="text"
+            value={secretKeyValue}
+            placeholder="Insira aqui sua secret key..."
+            onChange={handleSetSecretKey}
+            required
+          />
+        </div>
+
+        <button onClick={handleSaveClick}>Salvar</button>
+      </Modal>
+    </Container>
+  );
+};
+
+export default CardAdd;
