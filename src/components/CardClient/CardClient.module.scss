@@ -1,6 +1,6 @@
-import styled from "styled-components";
 
-export const Container = styled.li`
+
+    .container {
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -12,5 +12,4 @@ export const Container = styled.li`
     flex-wrap: no-wrap;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
-`
+    cursor: pointer}

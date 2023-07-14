@@ -1,4 +1,4 @@
-import { Container } from "./style";
+import style from "./style";
 
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ const CardClient = ({apikey, secretkey}) => {
     let redirect = `./RequestPage/${apikey}`
 
     return (
-        <Container>
+        <div className={style.container}>
             <Link href={redirect}>
                 
                     <div>
@@ -19,7 +19,7 @@ const CardClient = ({apikey, secretkey}) => {
                
             </Link>
             
-        </Container>
+        </div>
 
     )
 }
