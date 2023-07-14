@@ -1,4 +1,4 @@
-import style from "./style";
+import style from "./CardClient.module.scss";
 
 import Link from "next/link";
 

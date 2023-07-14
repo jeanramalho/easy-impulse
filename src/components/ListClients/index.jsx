@@ -1,4 +1,4 @@
-import { Container } from "./style"
+import style from "./listClients.module.scss"
 import { useEffect } from "react"
 import CardAdd from "../CardAdd"
 import CardClient from "../CardClient"
@@ -16,14 +16,14 @@ const ListClients = () => {
     
     
     return (
-        <Container>
+        <div className={styled.container}>
             <CardAdd />
            {
             cardClients.map((cliente) => {
                 return ( <CardClient key={cliente.apikey} apikey={cliente.apikey} secretkey={cliente.secretKey}/> )
             })
            }
-        </Container>
+        </div>
     )
 }
 
