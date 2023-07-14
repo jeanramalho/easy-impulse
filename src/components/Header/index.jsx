@@ -1,5 +1,5 @@
 import Image from "next/image"
-import style from "./header.module.scss"
+import Styles from "./header.module.scss"
 import logoLinx from "../../../public/logo-linx.png"
 import logoImpulse from "../../../public/linx-impulse.webp"
 
@@ -9,16 +9,16 @@ import logoImpulse from "../../../public/linx-impulse.webp"
 const Header = () => {
 
     return (
-       <div className={style.container}>
+       <div className={Styles.container}>
 
-            <div className={style.logoHeader}>
+            <div className={Styles.logoHeader}>
 
-                <Image src={logoLinx} alt="logo da linx"  className={style.logoLinx}/>
+                <Image src={logoLinx} alt="logo da linx"  className={Styles.logoLinx}/>
 
-                <div className={style.boxImpulse}>
+                <div className={Styles.boxImpulse}>
 
-                    <Image src={logoImpulse} alt="logo da linx"  className={style.logoImpulse}/>
-                    
+                    <Image src={logoImpulse} alt="logo da linx"  className={Styles.logoImpulse}/>
+
                 </div>
                 
             </div>

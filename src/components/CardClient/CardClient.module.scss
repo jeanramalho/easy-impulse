@@ -1,5 +1,3 @@
-
-
     .container {
     width: 100%;
     height: auto;
@@ -7,9 +5,11 @@
     padding: 5px;
     border-bottom: 2px #808080 solid;
     color: #808080;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer}
+    cursor: pointer;
+    background: green;
+
+    }
+
+    .cardInfo {
+        width: 15px;
+    }

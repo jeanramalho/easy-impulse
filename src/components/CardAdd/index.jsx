@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 
-import style from './cardAdd.module.scss';
+import Styles from './CardAdd.module.scss';
 
 // Modal.setAppElement('#Root')
 
@@ -49,9 +49,9 @@ const CardAdd = () => {
   };
 
   return (
-    <div className={style.container}>
-      <h2 className={style.titleCard}>Adicionar Cliente</h2>
-      <p className={style.plusCard} onClick={openModal}>+</p>
+    <div className={Styles.container}>
+      <h2 className={Styles.titleCard}>Adicionar Cliente</h2>
+      <p className={Styles.plusCard} onClick={openModal}>+</p>
 
       <Modal
         isOpen={modalIsOpen}
