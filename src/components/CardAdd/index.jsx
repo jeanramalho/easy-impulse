@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 
-import style from './CardAdd.module.scss';
+import style from './cardAdd.module.scss';
 
 // Modal.setAppElement('#Root')
 
