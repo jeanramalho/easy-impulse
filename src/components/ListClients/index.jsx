@@ -11,10 +11,6 @@ const ListClients = () => {
         const clients = localStorage.getItem('clientData')
         const cardClients = JSON.parse(clients)
     
-        console.log(cardClients)
-  
-    
-    
     return (
         <div className={style.container}>
             <CardAdd />
