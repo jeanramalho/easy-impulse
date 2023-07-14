@@ -2,16 +2,16 @@
 
 import Header from "@/components/Header"
 import ListClients from "@/components/ListClients"
-import { Container } from "./style"
+import style from "./homePage.module.scss"
 
 
 const HomePage = () => {
 
     return (        
-            <Container id="Root">
+            <div className={style.container} id="Root">
                 <Header />
                 <ListClients />
-            </Container>       
+            </div>       
     )
 }
 

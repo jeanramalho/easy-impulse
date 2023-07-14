@@ -16,7 +16,7 @@ const ListClients = () => {
     
     
     return (
-        <div className={styled.container}>
+        <div className={style.container}>
             <CardAdd />
            {
             cardClients.map((cliente) => {
