@@ -1,17 +1,16 @@
 "use client"
 
 import Header from "@/components/Header"
-import { Container } from "./style"
-import CardAdd from "@/components/CardAdd"
+import style from "./requestPage.module.scss"
 
 
 const HomePage = () => {
 
     return (        
-        <Container>
+        <div className={style.container}>
                <Header /> 
                 <h1>Olá</h1>
-        </Container>
+        </div>
             
     )
 }
