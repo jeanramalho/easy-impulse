@@ -5,17 +5,23 @@
     padding: 5px;
     border-bottom: 2px #808080 solid;
     color: #808080;
-    cursor: pointer;
     background: green;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     }
 
     .cardInfo {
-        width: 80%;
+        width: 100%;
         background: red;
     }
 
     .titleApiKey {
         width: 13px;
         background: orange;
+    }
+
+    .arrowReqPage {
+        background: white;
+        width: 10%;
     }
