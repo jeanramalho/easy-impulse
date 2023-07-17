@@ -16,7 +16,7 @@ const CardClient = ({apikey, secretkey}) => {
                         <p className={Styles.titleSecretKey}>{secretkey}</p>
                     </div>
 
-                    <h2>&gt;</h2>
+                    <p className={Styles.arrowReqPage}>&gt;</p>
                
             </Link>
             
