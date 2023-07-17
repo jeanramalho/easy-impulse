@@ -12,8 +12,8 @@ const CardClient = ({apikey, secretkey}) => {
             <Link href={redirect}>
                 
                     <div className={Styles.cardInfo}> 
-                        <h3>{apikey}</h3>
-                        <p>{secretkey}</p>
+                        <h3 className={Styles.titleApiKey}>{apikey}</h3>
+                        <p className={Styles.titleSecretKey}>{secretkey}</p>
                     </div>
 
                     <h2>&gt;</h2>
