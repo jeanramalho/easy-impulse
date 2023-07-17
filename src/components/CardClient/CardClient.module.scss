@@ -1,21 +1,21 @@
     .container {
     width: 100%;
     margin-top: 10px;
-    padding: 5px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     border-bottom: 2px #808080 solid;
     color: #808080;
-    display: flex;
+    
     }
 
     .link {
         width: 100%;
-        background: orange;
-        flex-direction: row !important;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    .cardInfo {
-        width: 80%;
-        background: green;
+    .container h3 {
+        font-size: 1.4rem;
     }
