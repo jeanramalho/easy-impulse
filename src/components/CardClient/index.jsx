@@ -9,14 +9,14 @@ const CardClient = ({apikey, secretkey}) => {
 
     return (
         <div className={Styles.container}>
-            <Link className={Styles.Link} href={redirect}>
+            <Link className={Styles.link} href={redirect}>
                 
-                    <div className={Styles.cardInfo}> 
-                        <h3 className={Styles.titleApiKey}>{apikey}</h3>
-                        <p className={Styles.titleSecretKey}>{secretkey}</p>
+                    <div> 
+                        <h3>{apikey}</h3>
+                        <p>{secretkey}</p>
                     </div>
 
-                    <p className={Styles.arrowReqPage}>&gt;</p>
+                    <h3>&gt;</h3>
                
             </Link>
             
