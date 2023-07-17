@@ -9,7 +9,7 @@ const CardClient = ({apikey, secretkey}) => {
 
     return (
         <div className={Styles.container}>
-            <Link href={redirect}>
+            <Link className={Styles.Link} href={redirect}>
                 
                     <div className={Styles.cardInfo}> 
                         <h3 className={Styles.titleApiKey}>{apikey}</h3>
