@@ -9,7 +9,6 @@ const HomePage = () => {
 
     return (        
             <div className={Styles.container} id="Root">
-                <Header />
                 <ListClients />
             </div>       
     )
