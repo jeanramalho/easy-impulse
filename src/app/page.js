@@ -1,14 +1,14 @@
 "use client"
 
 import Image from 'next/image'
-import ContainerPage from '@/pages/ContainerPage'
+import Header from '@/components/Header'
+import HomePage from '@/pages/HomePage'
+
 
 
 
 export default function Home() {
   return (
-    <main>
-      <ContainerPage />
-    </main>
+      <HomePage />
   )
 }

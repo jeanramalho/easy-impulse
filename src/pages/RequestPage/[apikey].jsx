@@ -14,7 +14,7 @@ const HomePage = () => {
 
     return (        
         <div className={Styles.container}>
-               <Header /> 
+               <Header />
                 <h1>Olá {parametro}</h1>
         </div>
             
