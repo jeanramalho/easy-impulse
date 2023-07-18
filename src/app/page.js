@@ -1,15 +1,14 @@
 "use client"
 
 import Image from 'next/image'
-import HomePage from '@/pages/HomePage'
-import RequestPage from '@/pages/RequestPage/[apikey]'
+import ContainerPage from '@/pages/ContainerPage'
 
 
 
 export default function Home() {
   return (
     <main>
-      <HomePage />
+      <ContainerPage />
     </main>
   )
 }
