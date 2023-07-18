@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const CardClient = ({apikey, secretkey}) => {
 
-    let redirect = `./RequestPage/${apikey}`
+    let redirect = `./RequestPage/${apikey}&${secretkey}`
 
     return (
         <div className={Styles.container}>

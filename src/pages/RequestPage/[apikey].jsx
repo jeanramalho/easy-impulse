@@ -10,6 +10,7 @@ const HomePage = () => {
 
     const router = useRouter()
     const parametro = router.query.apikey
+    
 
     return (        
         <div className={Styles.container}>
