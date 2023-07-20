@@ -16,9 +16,10 @@ const HomePage = () => {
 
         const localDB = localStorage.getItem('clientData')
         const objDB = JSON.parse(localDB)
-        console.log(objDB)
+        
 
-    }, [])
+    }, [objDB])
+    
     
 
     return (        
