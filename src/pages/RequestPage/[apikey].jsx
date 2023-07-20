@@ -10,6 +10,10 @@ const HomePage = () => {
 
     const router = useRouter()
     const parametro = router.query.apikey
+
+    const localDB = localStorage.getItem('clientData')
+
+    console.log(localDB)
     
 
     return (        
