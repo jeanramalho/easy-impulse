@@ -9,16 +9,16 @@ import { useEffect } from "react"
 
 const HomePage = () => {
 
-    
-    const localDB = localStorage.getItem('clientData')
-   
-
     const router = useRouter()
     const parametro = router.query.apikey
 
-    
+    useEffect(() => {
 
-    console.log(localDB)
+        const localDB = localStorage.getItem('clientData')
+        const objDB = JSON.parse(localDB)
+        console.log(objDB)
+
+    }, [])
     
 
     return (        
