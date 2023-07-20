@@ -3,15 +3,20 @@
 import Header from "@/components/Header"
 import Styles from "./requestPage.module.scss"
 import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 
 
 const HomePage = () => {
 
+    useEffect(() => {
+        const localDB = localStorage.getItem('clientData')
+    })
+
     const router = useRouter()
     const parametro = router.query.apikey
 
-    const localDB = localStorage.getItem('clientData')
+    
 
     console.log(localDB)
     
