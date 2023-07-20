@@ -9,9 +9,9 @@ import { useEffect } from "react"
 
 const HomePage = () => {
 
-    useEffect(() => {
-        const localDB = localStorage.getItem('clientData')
-    })
+    
+    const localDB = localStorage.getItem('clientData')
+   
 
     const router = useRouter()
     const parametro = router.query.apikey
