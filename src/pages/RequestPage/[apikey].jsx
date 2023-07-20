@@ -20,7 +20,7 @@ const HomePage = () => {
 
     }, [objDB])
     
-    
+    console.log(objDB)    
 
     return (        
         <div className={Styles.container}>
