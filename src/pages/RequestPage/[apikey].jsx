@@ -14,13 +14,10 @@ const HomePage = () => {
 
     useEffect(() => {
 
-        const router2 = useRouter()
-        const parametro2 = router2.query.apikey
-
         const localDB = localStorage.getItem('clientData')
         const objDB = JSON.parse(localDB)
         
-        filtraObj(objDB, parametro2)
+        filtraObj(objDB, parametro)
 
     }, [])
     
