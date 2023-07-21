@@ -35,7 +35,7 @@ const HomePage = () => {
     <div className={Styles.container}>
       <Header />
       {clienteAtual ? (
-        <h1>Olá {clienteAtual.apikey}</h1>
+        <h1>Olá {clienteAtual.apikey} e {clienteAtual.secretKey}</h1>
       ) : (
         <h1>Cliente não encontrado</h1>
       )}
