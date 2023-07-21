@@ -21,7 +21,12 @@ const HomePage = () => {
     }, [])
     
    function filtraObj(db, valorApikey) {
-    
+    let clienteAtual = db.find((objeto) => objeto.apikey.includes(valorApikey));
+
+    if(clienteAtual){
+        console.log(clienteAtual)
+        return clienteAtual
+    } el
    }
 
     return (        
