@@ -26,7 +26,9 @@ const HomePage = () => {
     if(clienteAtual){
         console.log(clienteAtual)
         return clienteAtual
-    } el
+    } else {
+        return false
+    }
    }
 
     return (        
