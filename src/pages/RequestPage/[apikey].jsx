@@ -17,6 +17,7 @@ const HomePage = () => {
         const localDB = localStorage.getItem('clientData')
         const objDB = JSON.parse(localDB)
         
+        filtraObj(objDB, parametro)
 
     }, [])
     
@@ -27,6 +28,8 @@ const HomePage = () => {
         console.log(clienteAtual)
         return clienteAtual
     } else {
+        console.log(valorApikey)
+        console.log("deu ruim")
         return false
     }
    }
