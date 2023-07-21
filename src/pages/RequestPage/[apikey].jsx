@@ -18,9 +18,11 @@ const HomePage = () => {
         const objDB = JSON.parse(localDB)
         
 
-    }, [objDB])
+    }, [])
     
-    console.log(objDB)    
+   function filtraObj(db, valorApikey) {
+    
+   }
 
     return (        
         <div className={Styles.container}>
