@@ -6,10 +6,10 @@ const SwitchRequest = () => {
             <form>
                 <select name="selectedApi">
                     <option value=""> Escolha uma API para request </option>
-                    <option value="xbox">Xbox Series</option>
-                    <option value="ps5">PS5</option>
-                    <option value="nsw">Nintendo Switch</option>
-                    <option value="pcg">PC Gaming</option>
+                    <option value="xbox"> Hotsite </option>
+                    <option value="ps5"> Search </option>
+                    <option value="nsw"> Navigates </option>
+                    <option value="pcg"> Onsite </option>
                 </select>
             </form>
         </div>

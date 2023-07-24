@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import Header from "@/components/Header";
 import Styles from "./requestPage.module.scss";
 
+import SwitchRequest from "@/components/SwitchRequest";
+
 const HomePage = () => {
   const router = useRouter();
   const parametro = router.query.apikey;
@@ -39,6 +41,7 @@ const HomePage = () => {
       ) : (
         <h1>Cliente não encontrado</h1>
       )}
+      <SwitchRequest />
     </div>
   );
 };
