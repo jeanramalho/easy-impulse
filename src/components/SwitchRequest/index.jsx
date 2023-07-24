@@ -2,7 +2,7 @@ import Styles from './SwitchRequest.module.scss'
 
 const SwitchRequest = () => {
     return (
-        <div className="container">
+        <div className={Styles.container}>
             <form>
                 <select name="selectedApi">
                     <option value=""> Escolha uma API para request </option>
