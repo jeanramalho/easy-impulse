@@ -1,6 +1,11 @@
 import Styles from './SwitchRequest.module.scss'
+import { useState } from 'react'
 
 const SwitchRequest = () => {
+
+    const [selectedValue, setValue] = useState("")
+    
+    
     return (
         <div className={Styles.container}>
             <form>
