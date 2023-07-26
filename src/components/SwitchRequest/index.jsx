@@ -4,7 +4,7 @@ const SwitchRequest = () => {
     return (
         <div className={Styles.container}>
             <form>
-                <select name="selectedApi">
+                <select name="selectedApi" className={Styles.switch}>
                     <option value=""> Escolha uma API para request </option>
                     <option value="xbox"> Hotsite </option>
                     <option value="ps5"> Search </option>
