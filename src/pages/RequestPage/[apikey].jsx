@@ -41,7 +41,7 @@ const HomePage = () => {
       ) : (
         <h1>Cliente não encontrado</h1>
       )}
-      <SwitchRequest />
+      <SwitchRequest clientApikey={clienteAtual.apikey} clientSecretKey={clienteAtual.secretKey} />
     </div>
   );
 };
