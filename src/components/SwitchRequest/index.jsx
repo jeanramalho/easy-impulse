@@ -13,12 +13,12 @@ const SwitchRequest = () => {
     return (
         <div className={Styles.container}>
             <form>
-                <select name="selectedApi" className={Styles.switch}>
+                <select name="selectedApi" className={Styles.switch} value={selectedValue} oncChange={handleSetValue}>
                     <option value=""> Escolha uma API para request </option>
-                    <option value="xbox"> Hotsite </option>
-                    <option value="ps5"> Search </option>
-                    <option value="nsw"> Navigates </option>
-                    <option value="pcg"> Onsite </option>
+                    <option value="Hotsite"> Hotsite </option>
+                    <option value="Search"> Search </option>
+                    <option value="Navigates"> Navigates </option>
+                    <option value="Onsite"> Onsite </option>
                 </select>
             </form>
         </div>
