@@ -21,6 +21,8 @@ const SwitchRequest = () => {
                     <option value="Onsite"> Onsite </option>
                 </select>
             </form>
+
+            <p>{selectedValue}</p>
         </div>
     )
 }
