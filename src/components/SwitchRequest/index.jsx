@@ -4,8 +4,12 @@ import { useState } from 'react'
 const SwitchRequest = () => {
 
     const [selectedValue, setValue] = useState("")
+
+    const handleSetValue = (event) => {
+        setValue(event.target.value)
+    }
     
-    
+
     return (
         <div className={Styles.container}>
             <form>
