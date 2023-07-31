@@ -35,15 +35,16 @@ const HomePage = () => {
 
   return (
     <div className={Styles.container}>
-      {/* <Header />
+      <Header />
       {clienteAtual ? (
         <h1>Olá {clienteAtual.apikey} e {clienteAtual.secretKey}</h1>
       ) : (
         <h1>Cliente não encontrado</h1>
       )}
-      <SwitchRequest clientApikey={clienteAtual.apikey} clientSecretKey={clienteAtual.secretKey} /> */}
+      <SwitchRequest clientApikey={clienteAtual.apikey} clientSecretKey={clienteAtual.secretKey} />
     </div>
   );
 };
-
+ testando
+ 
 export default HomePage;
